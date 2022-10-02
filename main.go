@@ -15,7 +15,7 @@ func main() {
 	var printDot bool
 	var tplStr string
 	flag.BoolVar(&printDot, "dot", false, "")
-	flag.StringVar(&tplStr, "template", "[{{.Type}} {{.Layout}}] {{.Name}} {{.Floating}}", "template to render the node name")
+	flag.StringVar(&tplStr, "template", "[{{.Type}} {{.Layout}}] {{.Name}}", "template to render the node name")
 
 	flag.Parse()
 	ipcsocket, err := i3ipc.GetIPCSocket()

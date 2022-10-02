@@ -16,7 +16,7 @@ Generate graphwiz format:
 
 Default template to render the node name:
 
-`[{{.Type}} {{.Layout}}] {{.Name}} {{.Floating}}`
+`[{{.Type}} {{.Layout}}] {{.Name}}`
 
 Override the default template:
 
