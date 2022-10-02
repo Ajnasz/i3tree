@@ -1,7 +1,10 @@
+// Package i3ipcnode contains utility method to manage i3ipc.Nodes
 package i3ipcnode
 
 import i3ipc "github.com/ndemarinis/i3ipc-go"
 
+// GetAllChildren merges an i3ipc.I3Node Nodes and Floating_Nodes into a single
+// slice
 func GetAllChildren(node i3ipc.I3Node) []i3ipc.I3Node {
 	size := len(node.Nodes) + len(node.Floating_Nodes)
 

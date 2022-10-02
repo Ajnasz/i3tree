@@ -1,3 +1,4 @@
+// Package dot package implements routine to print I3Node tree in a graphwiz digraph format
 package dot
 
 import (
@@ -70,6 +71,7 @@ func printDot(node i3ipc.I3Node, userTpl *template.Template) error {
 	return nil
 }
 
+// Print prints the I3Node tree in a graphwiz digraph format
 func Print(tree i3ipc.I3Node, userTpl *template.Template) {
 	fmt.Println("digraph {")
 	fmt.Println("node [shape=rect, style=rounded]")

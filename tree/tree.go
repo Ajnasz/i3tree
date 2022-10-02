@@ -1,3 +1,4 @@
+// Package tree package implements routine to print I3Node tree in a simple ascii tree
 package tree
 
 import (
@@ -27,6 +28,7 @@ func printTree(node i3ipc.I3Node, userTpl *template.Template, prefix string) err
 	return nil
 }
 
+// Print prints I3Node tree in a simple ascii tree
 func Print(node i3ipc.I3Node, tpl *template.Template) {
 	printTree(node, tpl, "|")
 }
